@@ -1,0 +1,2 @@
+安装 jar
+mvn install:install-file -Dfile=E:\DemoProject\cnc-sys-util-mybatis-tool\doc\substance-4.3.jar -DgroupId=org.jvnet.substance -DartifactId=substance -Dversion=4.3 -Dpackaging=jar

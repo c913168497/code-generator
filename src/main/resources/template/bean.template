@@ -1,0 +1,30 @@
+[BEAN_PACKAGE]
+
+import lombok.Getter;
+import lombok.Setter;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import com.joke.bamen.app.model.base.BaseEntity;
+
+[BEAN_IMPORT]
+
+/**
+ * @描述：[BEAN_NAME] 实体类
+ * @作者: Auto Code
+ * @创建时间: [NOW_DATE]
+ * @版本: 1.0
+ */
+@Getter
+@Setter
+@ApiModel
+public class [BEAN_NAME] extends BaseEntity {
+
+[BEAN_FILE]
+
+[BEAN_METHOD]
+
+    @Override
+    public String toString() {
+        return [BEAN_TOSTR_STR];
+    }
+}

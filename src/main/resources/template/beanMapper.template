@@ -1,0 +1,27 @@
+[MAPPER_PACKAGE]
+
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
+[MAPPER_IMPORT]
+
+import java.util.HashMap;
+import java.util.List;
+/**
+ * @描述：[BEAN_NAME]Dao接口
+ * @作者:  Auto Code
+ * @创建时间:  [NOW_DATE]
+ * @版本: 1.0
+ */
+@Mapper
+@Repository
+public interface [BEAN_NAME]Mapper{
+
+    List<[BEAN_NAME]> getById(Long id);
+
+    void insert([BEAN_NAME] [BEAN_NAME_LESS]);
+
+    void update([BEAN_NAME] [BEAN_NAME_LESS]);
+
+    List<[BEAN_NAME]> listBy(HashMap<String, Object> map);
+
+}

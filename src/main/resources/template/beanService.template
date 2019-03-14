@@ -1,0 +1,18 @@
+[SERVICE_PACKAGE]
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+[SERVICE_IMPORT]
+
+
+/**
+ * @描述：[BEAN_NAME]Service接口
+ * @作者:  Auto Code
+ * @创建时间:  [NOW_DATE]
+ * @版本: 1.0
+ */
+public class [BEAN_NAME]Service{
+
+    @Autowired
+    private [BEAN_NAME]Mapper [BEAN_NAME_LESS]Mapper;
+}
