@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
  * @创建时间:  [NOW_DATE]
  * @版本: 1.0
  */
+@Service
 public class [BEAN_NAME]Service{
 
     @Autowired
