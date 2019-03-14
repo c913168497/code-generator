@@ -31,7 +31,7 @@
 		where [BEAN_ID] = #{id}
 	</select>
 
-    <select id="getByIds" parameterType="java.util.List">
+    <select id="getByIds" parameterType="java.util.List" resultMap="beanMap">
       select * from
       <include refid="table" />
       where [BEAN_ID] in
