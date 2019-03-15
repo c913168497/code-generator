@@ -147,14 +147,20 @@ public class CodeAutoUtil extends AutoCoreUtil {
     }
 
     public boolean checkColumn(ColumnModel model){
-        return !model.getColumnName().equalsIgnoreCase("ID") &&
-                !model.getColumnName().equalsIgnoreCase("F_ID") &&
-                !model.getColumnName().equalsIgnoreCase("sys_flag") &&
-                !model.getColumnName().equalsIgnoreCase("remark") &&
-                !model.getColumnName().equalsIgnoreCase("creator") &&
-                !model.getColumnName().equalsIgnoreCase("create_time") &&
-                !model.getColumnName().equalsIgnoreCase("last_modified_time") &&
-                !model.getColumnName().equalsIgnoreCase("last_modifier");
-
+        String columnName = model.getColumnName();
+        return !columnName.equalsIgnoreCase("ID") &&
+                !columnName.equalsIgnoreCase("SYS_FLAG") &&
+                !columnName.equalsIgnoreCase("REMARK") &&
+                !columnName.equalsIgnoreCase("CREATOR") &&
+                !columnName.equalsIgnoreCase("CREATE_TIME") &&
+                !columnName.equalsIgnoreCase("LAST_MODIFIED_TIME") &&
+                !columnName.equalsIgnoreCase("LAST_MODIFIER") &&
+                !columnName.equalsIgnoreCase("F_ID") &&
+                !columnName.equalsIgnoreCase("F_SYS_FLAG") &&
+                !columnName.equalsIgnoreCase("F_REMARK") &&
+                !columnName.equalsIgnoreCase("F_CREATOR") &&
+                !columnName.equalsIgnoreCase("F_CREATE_TIME") &&
+                !columnName.equalsIgnoreCase("F_LAST_MODIFIED_TIME") &&
+                !columnName.equalsIgnoreCase("F_LAST_MODIFIER");
     }
 }

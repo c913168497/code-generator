@@ -4,7 +4,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 [MAPPER_IMPORT]
 
-import java.util.HashMap;
+import java.util.Map;
 import java.util.List;
 /**
  * @描述：[BEAN_NAME]Dao接口
@@ -22,6 +22,6 @@ public interface [BEAN_NAME]Mapper{
 
     void update([BEAN_NAME] [BEAN_NAME_LESS]);
 
-    List<[BEAN_NAME]> listBy(HashMap<String, Object> map);
+    List<[BEAN_NAME]> listBy(Map<String, Object> map);
 
 }
